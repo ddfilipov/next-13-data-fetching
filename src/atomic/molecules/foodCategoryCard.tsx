@@ -12,6 +12,7 @@ const Container = styled.div`
     border: 1px solid white;
     display: grid;
     grid-template-rows: 20px auto;
+    text-align: center;
 `;
 
 const FoodCategoryCard: FC<FoodCategoryCardProps> = ({ name, src, alt }) => {

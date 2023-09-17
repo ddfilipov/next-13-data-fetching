@@ -8,24 +8,24 @@ interface MainAreaProps {
     mealCategories: IMealCategories[];
 }
 
-const Container = styled.div`
+const CardListStyled = styled.ul`
     border: 1px solid white;
 `;
 
 const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {
     return (
-        <Container>
+        <div>
             <h2>Meal categories</h2>
-            <ul>
+            <CardListStyled>
                 {mealCategories.map((category) => {
                     return (
-                        <li>
-                            <FoodCategoryCard name={category.strCategoryDescription} src={category.strCategoryThumb} />
+                        <li key={category.idCategory}>
+                            <FoodCategoryCard name={category.strCategory} src={category.strCategoryThumb} />
                         </li>
                     );
                 })}
-            </ul>
-        </Container>
+            </CardListStyled>
+        </div>
     );
 };
 
