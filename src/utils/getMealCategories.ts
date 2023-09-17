@@ -9,7 +9,7 @@ export default async function getMealCategories(ms: number = 0, shouldReturnErro
         const mealCategories = await res.json();
         if (!mealCategories.categories || shouldReturnError) {
             console.log("pòr que no peto aqui?");
-            throw new Error("There has been an error, please try again");
+            throw new Error("There has been an error 😞 please try again");
         }
         return mealCategories.categories;
     } catch (err: any) {
