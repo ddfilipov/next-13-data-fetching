@@ -12,6 +12,7 @@ const Container = styled.div`
 `;
 
 const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {
+    console.log(JSON.stringify(mealCategories));
     return (
         <Container>
             <h2>Meal categories</h2>
