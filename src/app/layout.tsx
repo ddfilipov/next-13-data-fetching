@@ -1,15 +1,14 @@
 "use client";
 import Footer from "@/atomic/organism/footer";
 import Header from "@/atomic/organism/header";
-import { Fragment } from "react";
-// import "./globals.css";
+import "./globals.css";
 import styled from "styled-components";
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
+    display: grid;
     grid-template-columns: 1;
-    grid-template-rows: 3;
+    grid-template-rows: 40px auto 40px;
+    min-height: 100vh;
 `;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
