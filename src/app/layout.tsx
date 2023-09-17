@@ -14,12 +14,14 @@ const Container = styled.div`
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <div>
-            <Container>
-                <Header />
-                <div>{children}</div>
-                <Footer />
-            </Container>
-        </div>
+        <html>
+            <body>
+                <Container>
+                    <Header />
+                    <div>{children}</div>
+                    <Footer />
+                </Container>
+            </body>
+        </html>
     );
 }
