@@ -4,7 +4,7 @@ import { FC } from "react";
 import styled from "styled-components";
 import FoodCategoryCard from "../molecules/foodCategoryCard";
 
-interface MainAreaProps {
+interface FoodCategoriesProps {
     mealCategories: IMealCategories[];
 }
 
@@ -28,7 +28,7 @@ const CardListStyled = styled.ul`
     list-style: none;
 `;
 
-const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {
+const FoodCategories: FC<FoodCategoriesProps> = ({ mealCategories }) => {
     return (
         <Container>
             <h2>Meal categories</h2>
@@ -45,4 +45,4 @@ const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {
     );
 };
 
-export default MainArea;
+export default FoodCategories;

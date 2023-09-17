@@ -1,7 +1,7 @@
-import MainArea from "@/atomic/organism/mainArea";
+import FoodCategories from "@/atomic/organism/foodCategories";
 import getMealCategories from "@/utils/getMealCategories";
 
 export default async function CategoriesPage() {
     const mealCategories = await getMealCategories();
-    return <MainArea mealCategories={mealCategories} />;
+    return <FoodCategories mealCategories={mealCategories} />;
 }
