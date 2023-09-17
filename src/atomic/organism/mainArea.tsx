@@ -8,6 +8,17 @@ interface MainAreaProps {
     mealCategories: IMealCategories[];
 }
 
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+`;
+
 const CardListStyled = styled.ul`
     display: flex;
     flex-direction: row;
@@ -19,7 +30,7 @@ const CardListStyled = styled.ul`
 
 const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {
     return (
-        <div>
+        <Container>
             <h2>Meal categories</h2>
             <CardListStyled>
                 {mealCategories.map((category) => {
@@ -30,7 +41,7 @@ const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {
                     );
                 })}
             </CardListStyled>
-        </div>
+        </Container>
     );
 };
 
