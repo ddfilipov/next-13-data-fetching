@@ -29,19 +29,22 @@ const CardListStyled = styled.ul`
 `;
 
 const FoodCategories: FC<FoodCategoriesProps> = ({ mealCategories }) => {
+
     return (
-        <Container>
-            <h2>Meal categories</h2>
-            <CardListStyled>
-                {mealCategories?.map((category) => {
-                    return (
-                        <li key={category.idCategory}>
-                            <FoodCategoryCard name={category.strCategory} src={category.strCategoryThumb} />
-                        </li>
-                    );
-                })}
-            </CardListStyled>
-        </Container>
+        <>
+            <Container>
+                <h2>Meal categories</h2>
+                <CardListStyled>
+                    {mealCategories?.map((category) => {
+                        return (
+                            <li key={category.idCategory}>
+                                <FoodCategoryCard name={category.strCategory} src={category.strCategoryThumb} />
+                            </li>
+                        );
+                    })}
+                </CardListStyled>
+            </Container>
+        </>
     );
 };
 
