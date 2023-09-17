@@ -2,6 +2,7 @@
 import { IMealCategories } from "@/types/meal-categories.interface";
 import { FC } from "react";
 import styled from "styled-components";
+import FoodCategoryCard from "../molecules/foodCategoryCard";
 
 interface MainAreaProps {
     mealCategories: IMealCategories[];
@@ -17,7 +18,11 @@ const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {
             <h2>Meal categories</h2>
             <ul>
                 {mealCategories.map((category) => {
-                    return <li key={category.idCategory}>{category.strCategory}</li>;
+                    return (
+                        <li>
+                            <FoodCategoryCard name={category.strCategoryDescription} src={category.strCategoryThumb} />
+                        </li>
+                    );
                 })}
             </ul>
         </Container>
