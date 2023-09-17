@@ -3,10 +3,6 @@ import { IMealCategories } from "@/types/meal-categories.interface";
 import { FC } from "react";
 import styled from "styled-components";
 
-interface ErrorScreenProps {
-    loadingMessage?: string;
-}
-
 const Container = styled.div`
     display: flex;
     flex-direction: row;
@@ -19,7 +15,7 @@ const Container = styled.div`
     }
 `;
 
-const ErrorScreen: FC<ErrorScreenProps> = ({}) => {
+const ErrorScreen: FC = () => {
     return (
         <Container>
             <span>There has been an error 😞</span>
