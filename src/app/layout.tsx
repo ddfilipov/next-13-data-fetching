@@ -1,4 +1,6 @@
 "use client";
+import Footer from "@/atomic/organism/footer";
+import Header from "@/atomic/organism/header";
 import { Fragment } from "react";
 // import "./globals.css";
 import styled from "styled-components";
@@ -14,9 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <div>
             <Container>
-                <div>HEADER</div>
+                <Header />
                 <div>{children}</div>
-                <div>FOOTER</div>
+                <Footer />
             </Container>
         </div>
     );
