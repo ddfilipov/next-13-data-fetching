@@ -33,7 +33,7 @@ const FoodCategories: FC<FoodCategoriesProps> = ({ mealCategories }) => {
         <Container>
             <h2>Meal categories</h2>
             <CardListStyled>
-                {mealCategories.map((category) => {
+                {mealCategories?.map((category) => {
                     return (
                         <li key={category.idCategory}>
                             <FoodCategoryCard name={category.strCategory} src={category.strCategoryThumb} />
