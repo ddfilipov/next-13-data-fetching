@@ -5,8 +5,8 @@ const Container = styled.div`
     border: 1px solid white;
 `;
 
-const Header: FC = () => {
-    return <Container>HEADER</Container>;
+const MainArea: FC = () => {
+    return <Container>Main Area</Container>;
 };
 
-export default Header;
+export default MainArea;

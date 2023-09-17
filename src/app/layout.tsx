@@ -9,6 +9,7 @@ const Container = styled.div`
     grid-template-columns: 1;
     grid-template-rows: 40px auto 40px;
     min-height: 100vh;
+    gap: 5px;
 `;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
