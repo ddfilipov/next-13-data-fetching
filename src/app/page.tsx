@@ -1,7 +1,5 @@
-import MainArea from "@/atomic/organism/mainArea";
-import getMealCategories from "@/utils/getMealCategories";
+import Links from "@/atomic/organism/links";
 
 export default async function Home() {
-    const mealCategories = await getMealCategories();
-    return <MainArea mealCategories={mealCategories} />;
+    return <Links />;
 }
