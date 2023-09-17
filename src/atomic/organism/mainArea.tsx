@@ -9,7 +9,12 @@ interface MainAreaProps {
 }
 
 const CardListStyled = styled.ul`
-    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    list-style: none;
 `;
 
 const MainArea: FC<MainAreaProps> = ({ mealCategories }) => {

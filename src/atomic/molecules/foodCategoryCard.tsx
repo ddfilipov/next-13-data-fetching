@@ -13,13 +13,14 @@ const Container = styled.div`
     display: grid;
     grid-template-rows: 20px auto;
     text-align: center;
+    padding: 5px;
 `;
 
 const FoodCategoryCard: FC<FoodCategoryCardProps> = ({ name, src, alt }) => {
     return (
         <Container>
             <span>{name}</span>
-            <Image src={src} alt={alt ?? name} width={100} height={100} />
+            <Image src={src} alt={alt ?? name} width={250} height={200} />
         </Container>
     );
 };
